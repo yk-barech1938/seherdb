@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+    # RewriteRule ^ index.php [L]
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+RewriteCond %{HTTP_HOST} ^emp\.seher\.org\.pk$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.emp\.seher\.org\.pk$
+RewriteRule ^employees$ "https\:\/\/www\.emp\.seher\.org\.pk\/" [R=301,L]
+
+# php -- BEGIN cPanel-generated handler, do not edit
+
+# php -- END cPanel-generated handler, do not edit

@@ -1,0 +1,39 @@
+/* Custom styles for Select2 dropdown */
+.select2-container .select2-dropdown {
+    background-color: #f9f9f9; /* Lighter background color */
+    border: 1px solid #ccc; /* Lighter border color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Lighter box shadow */
+}
+
+/* Custom styles for Select2 results */
+.select2-container .select2-results__option {
+    padding: 6px 10px; /* Adjust padding as needed */
+    color: #5a5858; /* Text color */
+}
+
+.select2-container .select2-selection--single, .select2-container .select2-selection--multiple {
+    height: 38px;
+}
+.select2-container--focus.select2-container--default .select2-selection--single, .select2-container--focus.select2-container--default .select2-selection--multiple {
+    border: 1px solid #eeeff1;
+}
+
+/* Custom styles for Select2 dropdown scrollbar */
+.select2-container .select2-dropdown {
+    max-height: 200px; /* Set max height to enable scrollbar */
+    overflow-y: auto; /* Enable vertical scrollbar */
+}
+
+/* Thin custom scrollbar */
+.select2-container .select2-dropdown .select2-results {
+    scrollbar-width: thin;
+    scrollbar-color: #e7e4e4 #f9f9f9; /* Customize scrollbar colors */
+}
+
+
+
+
+/* Hide container scrollbar */
+.select2-container--open .select2-dropdown {
+    overflow: hidden;
+}
